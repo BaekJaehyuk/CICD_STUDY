@@ -1,6 +1,5 @@
 name: CI/CD Test
 
-
 on:
   push:
     branches:

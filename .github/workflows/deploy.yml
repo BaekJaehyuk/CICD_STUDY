@@ -2,13 +2,15 @@ name: CI/CD Test
 
 
 on:
-  #pull_request:
-  #  branches:
-  #    - main
-  #  types: [closed]
   push:
     branches:
       - main
+
+  pull_request:
+    branches:
+      - main
+
+permissions: write-all
 
 jobs:
   my-action:
@@ -31,8 +33,15 @@ jobs:
         shell: bash
 
       - name: Build with Gradle
-        run: ./gradlew clean build
-        shell: bash
+        uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
+        with:
+            arguments: build
+
+      - name: Build with Gradle
+        run : ./gradlew build
+
+      - name: Test with Gradle
+        run: ./gradlew test
 
       - name: Get current time
         uses: 1466587594/get-current-time@v2

@@ -16,16 +16,13 @@
 ---
 
 ## 설정
- ### 1. AWS Credentials 설정
-   AWS Beanstalk에 배포하기 위해서는 먼저 AWS IAM 유저를 생성하고 적절한 권한을 부여해야 합니다. 그리고 이 사용자의 액세스 키와 시크릿 키를 GitHub Secrets에 저장합니다. 자세한 내용은 GitHub 문서를 참조하세요.
-
- ### 2. .github/workflows 디렉토리에 GitHub Actions 워크플로우 추가
+ ### 1. .github/workflows 디렉토리에 GitHub Actions 워크플로우 추가
    `.github/workflows` 디렉토리에 적절한 이름의 YAML 파일을 생성하여 GitHub Actions 워크플로우를 추가합니다. 이 워크플로우는 코드 변경 사항이 발생할 때마다 자동으로 실행됩니다.
 
- ### 3. AWS Beanstalk 환경 구성
+ ### 2. AWS Beanstalk 환경 구성
    AWS Beanstalk에 애플리케이션 및 환경을 설정합니다. 환경 이름과 애플리케이션 이름은 GitHub Actions 워크플로우 파일에서 참조됩니다.
 
- ### 4. 코드 변경 및 푸시
+ ### 3. 코드 변경 및 푸시
    코드를 변경하고 GitHub 저장소에 푸시하면 GitHub Actions 워크플로우가 자동으로 실행됩니다. 워크플로우는 코드를 테스트하고 AWS Beanstalk에 배포합니다.
 
 

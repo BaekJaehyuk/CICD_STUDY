@@ -5,9 +5,9 @@
 
 ## CI (Continuous Integration)
 
--   코드 변경 사항을 공유 레포지토리(예: GitHub)에 푸시할 때마다 자동으로 통합 및 테스트되는 프로세스입니다.
+-   코드 변경 사항을 공유 리포지토리에 푸시할 때마다 자동으로 통합 및 테스트되는 프로세스입니다. 
 
-> GitHub Actions은 CI를 구현하는 데 사용되는 도구 중 하나로, GitHub 리포지토리의 이벤트에 따라 작업을 실행하고 테스트, 빌드 등의 작업을 수행할 수 있습니다.
+> GitHub Actions은 CI를 구현하는 데 사용되는 도구 중 하나로, GitHub 리포지토리의 이벤트에 따라 작업을 실행하고 테스트, 빌드 등의 작업을 수행할 수 있습니다. CI 도구에는 Jenkins, AWS CodePipeLine, Travis CI 등이 있습니다.
 ## CD (Continuous Deployment)
 
 - CD는 CI 후에 성공적으로 통과된 코드 변경 사항을 자동으로 배포하는 프로세스입니다.
